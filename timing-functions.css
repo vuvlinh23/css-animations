@@ -1,0 +1,50 @@
+.container {
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+.container div {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  border: 1px solid white;
+  margin-right: 20px;
+  width: 10%;
+}
+
+.obj {
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  position: relative;
+  transition: transform 2s;
+}
+
+.btn:hover + .obj {
+  transform: translateX(500px);
+}
+
+.linear-obj {
+  transition-timing-function: linear;
+}
+
+.ease-in-out-obj {
+  transition-timing-function: ease-in-out;
+}
+
+.ease-in-obj {
+  transition-timing-function: ease-in;
+}
+
+.ease-out-obj {
+  transition-timing-function: ease-out;
+}
+
+.default-obj {
+
+}
