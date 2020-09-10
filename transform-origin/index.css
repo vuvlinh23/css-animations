@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  padding: 15px;
+  margin: 20px 0;
+  width: 100px;
+  background-color: forestgreen;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.progress {
+  border: 2px solid gray;
+  width: 1000px;
+  height: 100px;
+  padding: 2px;
+}
+
+.progress__bar {
+  background-color: forestgreen;
+  transform: scaleX(0);
+  height: 100px;
+  transition: transform 1s;
+  transform-origin: 0% 50%;
+}
+
+.btn:active + .progress > .progress__bar {
+  transform: scaleX(1);
+}
